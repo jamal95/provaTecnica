@@ -43,7 +43,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form id="login-form" action="/GenerateCodes/login" method="post" role="form" style="display: block;">
+                                    <form id="login-form" action="/provaTecnica/login" method="post" role="form" style="display: block;">
                                         <div class="form-group">
                                             <input type="text" name="username" tabindex="1" class="form-control" placeholder="Username" value="" required="true">
                                         </div>
@@ -70,7 +70,7 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <form id="register-form" action="/GenerateCodes/register" method="post" role="form" style="display: none;">
+                                    <form id="register-form" action="/provaTecnica/register" method="post" role="form" style="display: none;">
                                         <div class="form-group">
                                             <input type="text" name="username" tabindex="1" class="form-control" placeholder="Username" required="true">
                                         </div>
