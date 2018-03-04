@@ -1,8 +1,12 @@
 # provaTecnica
-Prova técnica Limit Tecnologies
-• Estructura del proyecto:
-  – Configuración principal:
+<br>Antes de iniciar el proyecto hay que configurar el servidor glassfish y crear la base de datos con nombre prova con sus        correspondientes tablas (users, codes)<br>
+   
+   Prova técnica Limit Tecnologies
+    • Estructura del proyecto:
+     – Configuración principal:
   
+
+   
     ◦ El proyecto consiste en la arquitectura Spring MVC (Model, View, Controller) que utiliza
     hibernate para establecer las conexiones con la base de datos (relacionando los
     campos de una clase con los de una tabla de base de datos), en la carpeta principal
@@ -37,9 +41,9 @@ Prova técnica Limit Tecnologies
     url. El controlador recibe la petición mediante la anotación @RequestMapping.
     
     ▪ La carpeta resources contiene los archivos css y js.
-  – Funcionamiento básico del programa (iré explicando con mas detalle la
-  configuración de los controladores y clases DAO durante la explicación del
-  funcionamiento):
+    – Funcionamiento básico del programa (iré explicando con mas detalle la
+     configuración de los controladores y clases DAO durante la explicación del
+     funcionamiento):
   
     ◦ Al iniciar el programa nos redirige al index que contiene la vista para poder loguear y
     registrarse al sistema, cuando un usuario realiza alguna de las acciones de loguear,
@@ -64,11 +68,11 @@ Prova técnica Limit Tecnologies
     • Logout: La función principal de este método es eliminar la sesión y
     desloguearse del sistema.
     
-  ◦ Una vez iniciada la sesión podemos realizar dos acciones desde la vista home, generar
-  un nuevo código promocional y ver los códigos creados, las dos opciones nos redirigen
-  al controlador CodesContoller que tiene los siguientes métodos de la interface
-  codesDao llamada mediante la anotación @Autowired. los métodos deleteCode y
-  redeemCode los explicaré en el siguiente punto:
+    ◦ Una vez iniciada la sesión podemos realizar dos acciones desde la vista home, generar
+    un nuevo código promocional y ver los códigos creados, las dos opciones nos redirigen
+    al controlador CodesContoller que tiene los siguientes métodos de la interface
+    codesDao llamada mediante la anotación @Autowired. los métodos deleteCode y
+    redeemCode los explicaré en el siguiente punto:
   
     • seeCodes: La función de este métdo es obtener el id del usuario que ha iniciado
     sesión y mediante este accede a la base de datos y obtiene los códigos
@@ -103,10 +107,10 @@ Prova técnica Limit Tecnologies
     entidad y la tabla con la que se relaciona en la base de datos se indica con la anotación
     @Table.
     
-  ◦ Con la anotación @Column indicamos a que columna pertenece el campo
-  
-  ◦ Con la anotación @Id indicamos el campo id de la clase y le decimos que es
-  autoincrement con la anotación @GenerateValue.
+    ◦ Con la anotación @Column indicamos a que columna pertenece el campo
+   
+    ◦ Con la anotación @Id indicamos el campo id de la clase y le decimos que es
+    autoincrement con la anotación @GenerateValue.
   
     • La relación con la clase Users y Codes se hace mediante la anotación
     ManyToOne en la clase Codes y la anotación OneToMany en la clase Users
