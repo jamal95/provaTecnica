@@ -34,10 +34,10 @@
             30
         </session-timeout>
     </session-config>
-    <welcome-file-list>
+    <!--welcome-file-list>
         <welcome-file>faces/index.xhtml</welcome-file>
         <welcome-file>redirect.jsp</welcome-file>
-    </welcome-file-list>
+    </welcome-file-list-->
     <error-page>
         <location>/errors</location>
     </error-page>
